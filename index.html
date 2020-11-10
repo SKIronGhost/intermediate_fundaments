@@ -92,11 +92,9 @@
 			if(y<0 || y>=world.length || x<0 || x>=10){
 				return false
 			}
-
 			if(world[y][x]!=original_color){
 				return false
-			}
-			
+			}			
 			world[y][x] = color
 			fill(x,y+1,original_color, color)
 			fill(x,y-1,original_color, color)
